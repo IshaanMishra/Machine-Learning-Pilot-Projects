@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36" version="29.2.7">
+  <diagram name="Page-1" id="YCdVw6nzyCkJp9tIO-TW">
+    <mxGraphModel dx="757" dy="1412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-1" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;strokeWidth=2;" value="External Source:&lt;br&gt;RSL API" vertex="1">
+          <mxGeometry height="100" width="160" x="190" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="JSON Mapper &amp; Class" vertex="1">
+          <mxGeometry height="60" width="160" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-3" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="MySQL Database&lt;br&gt;(Rates, API Data&lt;br&gt;&amp; Results)" vertex="1">
+          <mxGeometry height="140" width="120" x="210" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Factor Level Class" vertex="1">
+          <mxGeometry height="60" width="160" x="470" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Screen Level Classes" vertex="1">
+          <mxGeometry height="60" width="160" x="470" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Policy Level Class" vertex="1">
+          <mxGeometry height="60" width="160" x="470" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" value="Premium&lt;br&gt;Comparison" vertex="1">
+          <mxGeometry height="100" width="140" x="750" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" value="UI / Logging&lt;br&gt;Display" vertex="1">
+          <mxGeometry height="60" width="140" x="750" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-9" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-2" value="JSON Response:&lt;br&gt;Input Factors, Cost Data">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-10" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="RQa4jshw8Mx3rnWNYw8L-3" value="1. Store Raw API Data">
+          <mxGeometry relative="1" x="0.5896" y="40" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="270" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-11" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-4" value="Mapped Input Factors">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-12" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-7" value="Coverage Premium&lt;br&gt;(for Comparison)">
+          <mxGeometry relative="1" x="-0.65" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="820" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-13" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-4" value="2. Query Rate Tables">
+          <mxGeometry relative="1" x="0.1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="390" y="470" />
+              <mxPoint x="390" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-14" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-5" value="Factor Premiums">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-15" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-6" value="Screen Sub-Totals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-16" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="RQa4jshw8Mx3rnWNYw8L-3" value="3. Store Calculated&lt;br&gt;Results">
+          <mxGeometry relative="1" x="0.2" y="30" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="350" y="630" />
+              <mxPoint x="350" y="480" />
+              <mxPoint x="330" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-17" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-7" value="Tool&#39;s Calculated&lt;br&gt;Premium">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RQa4jshw8Mx3rnWNYw8L-18" edge="1" parent="1" source="RQa4jshw8Mx3rnWNYw8L-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RQa4jshw8Mx3rnWNYw8L-8" value="Match / Delta Result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
